@@ -1,17 +1,22 @@
 package cuentas; //forma parte del paquete cuentas
 
 public class CCuenta {
+				
+				//introduzco las variables
 
-
-    private String nombre;
+    private String nombre;  
     private String cuenta;
     private double saldo;
     private double tipoInterés;
 
+    			//constructor vacío por si hace falta
+    
     public CCuenta()
     {
     }
-
+    			
+    			//constructor utilizado en el Main
+    
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
@@ -24,6 +29,8 @@ public class CCuenta {
         return saldo;
     }
 
+      //excepción: no se puede ingresar una cantidad negativa
+    
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
@@ -31,6 +38,8 @@ public class CCuenta {
         saldo = saldo + cantidad;
     }
 
+      //excepción: no se pude retirar una cantidad negativa ni mayor que el saldo disponible
+    
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)
