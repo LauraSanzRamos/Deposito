@@ -1,4 +1,3 @@
-package cuentas; // forma parte del paquete cuentas 
 
 public class CCuenta {
 				
