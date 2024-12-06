@@ -1,11 +1,11 @@
-package cuentas; //forma parte del paquete cuentas
+package cuentas; /* forma parte del paquete cuentas */
 
 
 public class Main {
 
     public static void main(String[] args) {
-        CCuenta cuenta1; //cambio de la variable miCuenta por cuenta1
-        cuenta1 = operativa_cuenta(0);  //parametro cantidad tipo float con valor 0
+        CCuenta cuenta1;                      /* cambio de la variable miCuenta por cuenta1 */
+        cuenta1 = operativa_cuenta(0);        /* parametro cantidad tipo float con valor 0 */
 
         try {
             cuenta1.retirar(2300);
@@ -19,7 +19,7 @@ public class Main {
             System.out.print("Fallo al ingresar");
         }
     }
-    //se crea el metodo operativa_cuenta    //añado parametro cantidad de tipo float
+    											/* se crea el metodo operativa_cuenta    añado parametro cantidad de tipo float */
 	private static CCuenta operativa_cuenta(float cantidad) {
 		CCuenta cuenta1;
 		double saldoActual;

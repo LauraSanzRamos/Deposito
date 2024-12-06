@@ -1,21 +1,21 @@
-package cuentas; //forma parte del paquete cuentas
+package cuentas; // forma parte del paquete cuentas 
 
 public class CCuenta {
 				
-				//introduzco las variables
+				/** @param introduzco las constantes */
 
     private String nombre;  
     private String cuenta;
     private double saldo;
     private double tipoInterés;
 
-    			//constructor vacío por si hace falta
+    			/** @param método vacío por si hace falta */
     
     public CCuenta()
     {
     }
     			
-    			//constructor utilizado en el Main
+    			/** @param método utilizado en el Main */
     
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
@@ -24,12 +24,14 @@ public class CCuenta {
         saldo=sal;
     }
 
+    			/** @return método que devuelve el saldo */
+    
     public double estado()
     {
         return saldo;
     }
 
-      //excepción: no se puede ingresar una cantidad negativa
+      			/** @exception: no se puede ingresar una cantidad negativa */
     
     public void ingresar(double cantidad) throws Exception
     {
@@ -38,7 +40,7 @@ public class CCuenta {
         saldo = saldo + cantidad;
     }
 
-      //excepción: no se pude retirar una cantidad negativa ni mayor que el saldo disponible
+      			/** @exception no se pude retirar una cantidad negativa ni mayor que el saldo disponible */
     
     public void retirar(double cantidad) throws Exception
     {
@@ -49,7 +51,7 @@ public class CCuenta {
         saldo = saldo - cantidad;
     }
 
-    //generamos los get y set 
+    			/** @param generamos los get y set */
     
 	public String getNombre() {
 		return nombre;
