@@ -1,4 +1,3 @@
-package cuentas; // forma parte del paquete cuentas 
 
 				/** @param empieza la clase Main */
 public class Main {
