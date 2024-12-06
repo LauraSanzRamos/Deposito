@@ -1,4 +1,4 @@
-
+package cuentas;
 				/** @param empieza la clase Main */
 public class Main {
 			

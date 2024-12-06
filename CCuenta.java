@@ -1,4 +1,4 @@
-
+package cuentas;
 public class CCuenta {
 				
 				/** @param introduzco las constantes */
